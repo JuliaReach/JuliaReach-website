@@ -17,18 +17,18 @@
 # destination: build
 # data_dir: src/benchmark-data
 
-site: https://juliadynamics.github.io/JuliaDynamics/
-#site: https://shakyaprashant.github.io/JuliaDynamics/
+site: https://JuliaReach.github.io/JuliaReach/
+#site: https://shakyaprashant.github.io/JuliaReach/
 
 # kramdown:
 #   syntax_highlighter: nil
 
 
-title: JuliaDynamics
+title: JuliaReach
 email: datseris.george@gmail.com
-description: JuliaDynamics # this means to ignore newlines until "baseurl:"
-baseurl: "/JuliaDynamics" # the subpath of your site, e.g. /blog
-url: "https://juliadynamics.github.io/JuliaDynamics/" # the base hostname & protocol for your site, e.g. http://example.com
+description: JuliaReach # this means to ignore newlines until "baseurl:"
+baseurl: "/JuliaReach" # the subpath of your site, e.g. /blog
+url: "https://JuliaReach.github.io/JuliaReach/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 

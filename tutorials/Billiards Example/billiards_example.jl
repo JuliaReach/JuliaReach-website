@@ -1,8 +1,8 @@
 # # Introduction
 # ## Author
 # [George Datseris](https://github.com/Datseris),
-# contributor of [JuliaDynamics](https://github.com/JuliaDynamics)
-# and [JuliaMusic](https://github.com/JuliaDynamics)
+# contributor of [JuliaReach](https://github.com/JuliaReach)
+# and [JuliaMusic](https://github.com/JuliaReach)
 
 # ## This tutorial
 # In this tutorial we will simulate a dynamical billiard. This is a very simple
@@ -10,7 +10,7 @@
 # When encountering a boundary, the particle undergoes specular reflection.
 
 # There is a Julia package to simulate these kind of systems,
-# [`DynamicalBilliards`](github.com/JuliaDynamics/DynamicalBilliards.jl).
+# [`DynamicalBilliards`](github.com/JuliaReach/DynamicalBilliards.jl).
 # In this tutorial we are simply creating a simplified version of this package
 # that has less features, less performance and less "safety control".
 # Other than that, the core of how `DynamicalBilliards` works

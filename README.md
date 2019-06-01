@@ -1,11 +1,11 @@
-# JuliaDynamics
+# JuliaReach
 
 This repository serves the following purposes:
 
-* Contains the source code for the JuliaDynamics website in the `src` and `build` folders.
+* Contains the source code for the JuliaReach website in the `src` and `build` folders.
 * Hosts the website via GitHub-pages and Jekyll.
-* Contains tutorials for all packages of JuliaDynamics in the `tutorials` folder.
-* Contains video resources for all packages of JuliaDynamics in the `videos` folder.
+* Contains tutorials for all packages of JuliaReach in the `tutorials` folder.
+* Contains video resources for all packages of JuliaReach in the `videos` folder.
 
 ---
 
