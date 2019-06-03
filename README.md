@@ -9,7 +9,8 @@ This repository serves the following purposes:
 
 ---
 
-The website was modeled after the website of [QuantumOptics.jl](https://qojulia.org/) and most code that builds the site was re-used from the repository of QuantumOptics.jl (with permission).
+The website was modeled after the website of [JuliaDynamics.jl](https://juliadynamics.github.io/JuliaDynamics/)
+and [QuantumOptics.jl](https://qojulia.org/).
 
 ---
 To build locally do follow the instructions from here: https://jekyllrb.com/docs/
