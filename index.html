@@ -15,29 +15,70 @@ layout: default
 <div class="container">
     <!-- Description of JuliaReach -->
 
+    <!-- Getting started / Installation -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header"><i class="fa fa-arrow-circle-right"></i> Getting Started</h2>
+
+<!--
+            <p>
+            All packages of JuliaReach are registered!
+            To install them simply press <code>]</code> to enter the package manager mode and then do:
+            <code>add PackageName</code>.
+            To get started with Julia, check out <a
+               href="https://docs.julialang.org/en/stable/manual/getting-started/">Julia's setup instructions</a>.
+            For plotting we recommend <code>PyPlot</code> or <code>Makie</code>.
+            </p>
+-->
+<p align="justify">
+JuliaReach is a toolbox for set-based reachability analysis of dynamical systems.
+JuliaReach consists of two main packages: Reachability, containing implementations of reachability algorithms for continuous and hybrid systems,
+and LazySets, a standalone library that implements state-of-the-art algorithms for calculus with convex sets.
+The library offers both concrete and lazy set representations, where the latter stands for the ability to delay set computations until they are needed.
+The choice of the programming language Julia and the accompanying documentation of our toolbox allow researchers to easily translate set-based
+algorithms from mathematics to software in a platform-independent way, while achieving runtime performance that is comparable to statically compiled
+languages. Combining lazy operations in high dimensions and explicit computations in low dimensions, JuliaReach can be applied to solve complex,
+large-scale problems.
+</p>
+        </div>
+    </div>
+    
     <!-- Packages and their logos -->
-    <h2 class="page-header"><i class="fa fa-cubes"></i> Packages</h2>
+    <h2 class="page-header"><i class="fa fa-cubes"></i> Projects</h2>
+
+        <!--
     <div class="row text-center" id="packages">
-        <!-- DynSys -->
+
+
         <div class="col-md-4">
             <a href="https://JuliaReach.github.io/DynamicalSystems.jl/dev/"><img src="videos/chaos/dynamicalsystems_logo.gif" alt="DynamicalSystems.jl" width="100%"></a>
             <p class="text-left text-muted"> <br> A feature-full library for the exploration of dynamical systems and chaos. Works universally for any dynamical system, discrete or continuous.
             </p>
         </div>
-        <!-- billiards -->
+
         <div class="col-md-4">
             <a href="https://JuliaReach.github.io/DynamicalBilliards.jl/dev/"><img src="videos/billiards/DynamicalBilliards_logo_animated.gif" alt="DynamicalBilliards.jl" width="100%"></a>
             <p class="text-left text-muted"> <br> An easy-to-use, modular, performant and extendable package for dynamical billiards in two dimensions.
             </p>
         </div>
-        <!-- TSPred -->
+
         <div class="col-md-4">
             <a href="https://JuliaReach.github.io/TimeseriesPrediction.jl/dev/"><img src="videos/tspred/tspred_logo.png"
                             alt="TimeseriesPrediction.jl" width="100%"></a>
             <p class="text-left text-muted"> <br> Prediction of timeseries using methods of nonlinear dynamics and timeseries analysis. </p>
         </div>
     </div>
+        -->
 
+             <ul>
+             <li><a href="https://github.com/JuliaReach/LazySets.jl/">LazySets.jl</a> A Julia package for calculus with convex sets.</li>
+             <li><a href="https://github.com/JuliaReach/Reachability.jl/">Reachability.jl</a> Reachability and Safety of Nondeterministic Dynamical Systems.</li>
+             <li><a href="https://github.com/JuliaReach/SX.jl">SX.jl</a> SpaceEx modeling language parser.</li>
+             <li><a href="https://github.com/JuliaReach/MathematicalSystems.jl/">MathematicalSystems.jl</a> Systems definitions in Julia.</li>
+             <li><a href="https://github.com/JuliaReach/BernsteinExpansions.jl">BernsteinExpansions.jl</a> A Julia package to compute Bernstein coefficients of multivariate polynomials.</li>
+             </ul>
+             
+<!--
     <div class="row text-center" id="packages">
 
         <div class="col-md-4">
@@ -51,8 +92,8 @@ layout: default
             <p class="text-left text-muted"> <br> Software that helps scientists deal with their scientific projects. </p>
         </div>
     </div>
-
-    <!-- Features / Aspects -->
+-->
+    <!-- Features / Aspects 
     <div class="row text-center" id="features">
         <h2 class="page-header"><i class="fa fa-th-large"></i> Features</h2>
         <div class="col-md-4">
@@ -87,6 +128,7 @@ layout: default
             </p>
         </div>
     </div>
+-->
 
     <!-- Code snippets! -->
     <div class="row">
@@ -101,12 +143,13 @@ layout: default
                 <li role="presentation"><a href="#example5" aria-controls="example5" role="tab" data-toggle="tab">International <br> Space-Station</a></li>
                 <li role="presentation"><a href="#example6" aria-controls="example6" role="tab" data-toggle="tab">Laub-loomis</a></li>
                 <li role="presentation"><a href="#example7" aria-controls="example7" role="tab" data-toggle="tab">Building</a></li>
-                <li role="presentation"><a href="#example8" aria-controls="example8" role="tab" data-toggle="tab"> Platooning <br> vehicles</a></li>
+                <li role="presentation"><a href="#example8" aria-controls="example8" role="tab" data-toggle="tab"> 3-vehicle platoon </a></li>
                 <li role="presentation"><a href="#example9" aria-controls="example9" role="tab" data-toggle="tab">Thermostat </a></li>
             </ul>
         </div>
     </div>
-
+    [under construction]
+<!--
     <div class="row">
         <div class="col-lg-12">
             <div class="tab-content">
@@ -122,40 +165,34 @@ layout: default
             </div>
         </div>
     </div>
+-->
+    <!-- Benchmarks & Repeatability evaluations -->
+    <h2 class="page-header"><i class="fa fa-line-chart" aria-hidden="true"></i> Benchmarks & Repeatability Evaluations </h2>
 
+             <ul>
+             <li><a href="https://github.com/JuliaReach/ARCH2018_RE">ARCH18.</a> 5th International Workshop on Applied Verification of Continuous and Hybrid Systems.</li>
+             <li><a href="https://github.com/JuliaReach/HSCC2019_RE">HSCC19.</a> 22nd ACM International Conference on Hybrid Systems: Computation and Control.</li>
+             <li><a href="https://github.com/JuliaReach/ARCH2019_RE">ARCH19.</a> 6th International Workshop on Applied Verification of Continuous and Hybrid Systems.</li>
+             </ul>
 
-    <!-- Getting started / Installation -->
+    <!-- People -->
     <div class="row">
         <div class="col-lg-12">
-            <h2 class="page-header"><i class="fa fa-arrow-circle-right"></i> Getting Started</h2>
+            
+            
+            <h2 class="page-header"><i class="fa fa-users" aria-hidden="true"></i> People</h2>
+            <!-- 
+                <h2 class="page-header"><i class="fa fa-external-link"></i> People</h2>
+                -->
 
-            <p>
-            All packages of JuliaReach are registered!
-            To install them simply press <code>]</code> to enter the package manager mode and then do:
-            <code>add PackageName</code>.
-            To get started with Julia, check out <a
-               href="https://docs.julialang.org/en/stable/manual/getting-started/">Julia's setup instructions</a>.
-            For plotting we recommend <code>PyPlot</code> or <code>Makie</code>.
-            </p>
-        </div>
-    </div>
-
-    <!-- Getting started / Installation -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="page-header"><i class="fa fa-external-link"></i> People</h2>
-
-            <p>
-            Check out the following list for various packages related to dynamics, dynamical systems, timeseries, data analysis and more!
-            </p>
+    <!--        <h3> Core developers</h3>  -->
 
             <ul>
-            <li><a href="https://kahaaga.github.io/CausalityTools.jl/dev/">CausalityTools.jl</a> is a framework for detecting causal relations between timeseries.</li>
-            <li><a href="https://github.com/JuliaStats/TimeSeries.jl/">TimeSeries.jl</a> is a lightweight framework for working with time series data in Julia.</li>
-            <li><a href="https://gitlab.com/emagin-open-source/ucrdtw.jl">UcrDtw.jl</a> is a fast implementation of a Dynamic Time Warping algorithm for searching a timeseries for a given pattern.</li>
-            <li><a href="https://github.com/kahaaga/TimeseriesSurrogates.jl/">TimeseriesSurrogates.jl</a> for generation (and use of) surrogate timeseries.</li>
-            <li><a href="https://github.com/JuliaReach/Reachability.jl">Reachability.jl</a> for approximating the reachable states and checking safety properties of affine systems.</li>
+            <li><a href="https://mforets.github.io">Marcelo Forets.</a> Universidad de la República, Uruguay.</li>
+            <li><a href="https://schillic.github.io">Christian Schilling.</a> Institute for Science and Technology, Austria.</li>
             </ul>
+
+
         </div>
     </div>
 
