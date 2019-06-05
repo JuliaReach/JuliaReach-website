@@ -138,17 +138,32 @@ large-scale problems.
             <ul class="nav nav-pills nav-justified" role="tablist">
                 <li role="presentation" class="active"><a href="#example1" aria-controls="example1" role="tab" data-toggle="tab">Filtered oscillator</a></li>
                 <li role="presentation"><a href="#example2" aria-controls="example2" role="tab" data-toggle="tab">Cruise control</a></li>
-                <li role="presentation"><a href="#example3" aria-controls="example3" role="tab" data-toggle="tab">Spacecraft rendez-vous</a></li>
-                <li role="presentation"><a href="#example4" aria-controls="example4" role="tab" data-toggle="tab">Quadrotor <br> model </a></li>
-                <li role="presentation"><a href="#example5" aria-controls="example5" role="tab" data-toggle="tab">International <br> Space-Station</a></li>
-                <li role="presentation"><a href="#example6" aria-controls="example6" role="tab" data-toggle="tab">Laub-loomis</a></li>
+                <li role="presentation"><a href="#example3" aria-controls="example3" role="tab" data-toggle="tab">Spacecraft <br> rendez-vous</a></li>
+                <li role="presentation"><a href="#example4" aria-controls="example4" role="tab" data-toggle="tab">Quadrotor <br> stability control </a></li>
+                <li role="presentation"><a href="#example5" aria-controls="example5" role="tab" data-toggle="tab">Laub-Loomis <br> molecule </a></li>
+                <li role="presentation"><a href="#example6" aria-controls="example6" role="tab" data-toggle="tab">International <br> Space-Station</a></li>
                 <li role="presentation"><a href="#example7" aria-controls="example7" role="tab" data-toggle="tab">Building</a></li>
                 <li role="presentation"><a href="#example8" aria-controls="example8" role="tab" data-toggle="tab"> 3-vehicle platoon </a></li>
-                <li role="presentation"><a href="#example9" aria-controls="example9" role="tab" data-toggle="tab">Thermostat </a></li>
+               <!-- <li role="presentation"><a href="#example9" aria-controls="example9" role="tab" data-toggle="tab">Thermostat </a></li> -->
             </ul>
         </div>
     </div>
-    [under construction]
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="tab-content">
+                {% include codesnippet.html id="example1" name="filtered_oscillator" imgname = "flowpipes_filtered_oscillator_1-2.png" title="Two-dimensional switched oscillator and a parametric number of filters (here 256)" %}
+                {% include codesnippet.html id="example2" name="cruise_control" imgname = "cruise_control.png" title="Hybrid model of a cruise control with service and emergency brakes of the engine" %}
+                {% include codesnippet.html id="example3" name="spacecraft" imgname = "SRA01_SR02.png" title="Transition into aborting mode of the linear hybrid spacecraft rendez-vous model" %}
+                {% include codesnippet.html id="example4" name="quadrotor" imgname = "quadrotor.png" title="Nonlinear dynamics of a quadrotor: verifying stabilization with a PD controller" %}
+                {% include codesnippet.html id="example5" name="laub_loomis" imgname = "laub_loomis.png" title="Nononlinear Laub-Loomis model studying a class of enzymatic activities" %}
+                {% include codesnippet.html id="example6" name="iss" imgname = "ISSF01.png" title="Structural model of component 1R (Russian service module) with 270 state variables" %}
+                {% include codesnippet.html id="example7" name="building" imgname = "BLDF01_time_horizon_20.png" title="Verification that the top-floor displacement of a building is below a given bound" %}
+                {% include codesnippet.html id="example8" name="platoon" imgname = "PLAD01_BND42.png" title="Platoon of three vehicles following each other with loss of communication" %}
+          </div>
+        </div>
+    </div>
+
 <!--
     <div class="row">
         <div class="col-lg-12">
@@ -195,13 +210,15 @@ large-scale problems.
 
                <h3> Scientific collaborators </h3> 
 
+               <ul>
                <li><a href="https://www.fis.unam.mx/directorio/16/luis-strong-benet-strong-fernandez">Luis Benet.</a> Instituto de Ciencias Físicas, Universidad Nacional Autónoma de México, México.</li>
                <li><a href="https://www.sergiybogomolov.com/">Sergiy Bogomolov.</a> College of Engineering & Computer Science, Australian National University, Australia.</li>
                <li><a href="https://sites.google.com/site/frehseg/">Goran Frehse.</a> ENSTA ParisTech, France.</li>
                <li><a href="https://swt.informatik.uni-freiburg.de/staff/podelski">Andreas Podelski.</a> University of Freiburg, Germany.</li>
                <li><a href="http://sistemas.fciencias.unam.mx/~dsanders/">David P. Sanders.</a> Departamento de Física, Facultad de Ciencias, Universidad Nacional Autónoma de México, México.</li>
                <li><a href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-viry-724177168/">Frédéric Viry.</a> CERFACS, France.</li>
-               
+               </ul>
+
         </div>
     </div>
 
