@@ -9,7 +9,7 @@
         </div>
         <div class="col-md-6">
            {% if include.imgname %}
-            <img class="img-responsive" src="./videos/codesnippets/{{ include.imgname }}" alt="">
+            <img class="img-responsive" src="./videos/codesnippets/{{ include.imgname }}" alt="" height="500", width="500">
             {% elsif include.vidname %}
                 <video width=100% controls autoplay loop>
                     <source src="./videos/codesnippets/{{ include.vidname }}" type="{{ include.vidtype }}">
