@@ -28,7 +28,7 @@ title: JuliaReach
 email: datseris.george@gmail.com
 description: JuliaReach # this means to ignore newlines until "baseurl:"
 baseurl: "/JuliaReach-website" # the subpath of your site, e.g. /blog
-url: "https://JuliaReach.github.io/JuliaReach/" # the base hostname & protocol for your site, e.g. http://example.com
+#url: "https://JuliaReach.github.io/JuliaReach/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
