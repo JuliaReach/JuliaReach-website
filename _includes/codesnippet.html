@@ -1,21 +1,86 @@
-<div role="tabpanel" class="tab-pane tab-code-example fade {% if include.id == "example1" %}in active{% endif %}" id="{{ include.id }}">
+<div role="tabpanel" class="tab-pane tab-code-example fade {%- if include.id == "example1" -%}in active{%- endif -%}" id="{{ include.id }}">
     <div class="page-header">
         <h3>{{ include.title }}</h3>
     </div>
 
     <div class="row">
         <div class="col-md-6">
-<pre><code class="language-julia">{% include_relative _codesnippets/build/{{ include.name }}.jl %}</code></pre>
+<pre><code class="language-julia">  {%- include_relative _codesnippets/build/{{ include.name }}.jl -%}</code></pre>
         </div>
         <div class="col-md-6">
-           {% if include.imgname %}
-            <img class="img-responsive" src="./videos/codesnippets/{{ include.imgname }}" alt="" height="500", width="500">
-            {% elsif include.vidname %}
+          {%- if include.imgname -%}
+           {%- if include.carousel == "true" -%}
+           <div class="container" style="width: 600px !important">
+                        <div id="myCarousel-{{ include.name }}" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            {%- assign path = '/case_studies/' | append: include.imgname -%}
+                              {% assign i=0 %}
+
+                              {%- for image in site.static_files -%}
+
+                              {%- if image.path contains path -%}
+
+                                    {%- if i == 0 -%}
+
+                                    <li data-target="#myCarousel-{{ include.name }}" data-slide-to="{{ i }}" class="active"></li>
+
+                                    {%- assign i = i | plus:1 -%}
+                                    {%- else -%}
+
+                                      <li data-target="#myCarousel-{{ include.name }}" data-slide-to="{{ i }}"></li>
+
+                                      {%- assign i = i | plus:1 -%}
+                                    {%- endif -%}
+                              {%- endif -%}
+
+                              {%- endfor -%}
+                          </ol>
+                      
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" >
+                          
+                            {%- assign j=0 -%}
+                              {%- for image in site.static_files -%}
+                              {%- if image.path contains path -%}
+                              {%- if j == 0 -%}
+                                  <div class="item active">
+                                  <img src="{{ site.baseurl }}{{ image.path }}" alt="" width="500px" />
+                                   </div>
+                              {%- assign j = j | plus:1 -%}
+                              {%- else -%}
+                              <div class="item">
+                                <img src="{{ site.baseurl }}{{ image.path }}" alt="" width="500px" />
+                              </div>
+                              {%- assign j = j | plus:1 -%}
+                                  {%- endif -%}
+                                {%- endif -%}
+                            {%- endfor -%}
+                          </div>
+                      
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myCarousel-{{ include.name }}" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#myCarousel-{{ include.name }}" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                </div>
+           
+                {%- elsif include.carousel == "false" -%}
+                <div class="container">
+                  <img class="img-responsive" src="./videos/codesnippets/{{ include.imgname }}" alt="" height="500" width="500">
+                </div>
+                {%- endif -%}
+            {%- elsif include.vidname -%}
                 <video width=100% controls autoplay loop>
                     <source src="./videos/codesnippets/{{ include.vidname }}" type="{{ include.vidtype }}">
                     Your browser does not support the video tag.
     </video>
-{% endif %}
+{%- endif -%}
         </div>
     </div>
 </div>

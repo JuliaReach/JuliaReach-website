@@ -8,16 +8,17 @@ layout: default
 
 <div class="container">
 <br>
-<br>
-<br>
+
 </div>
 <!-- Page Content -->
 <div class="container">
     <!-- Description of JuliaReach -->
 
     <!-- Getting started / Installation -->
+    
     <div class="row">
         <div class="col-lg-12">
+
             <h2 class="page-header"><i class="fa fa-arrow-circle-right"></i> Getting Started</h2>
 
 <!--
@@ -152,35 +153,19 @@ large-scale problems.
     <div class="row">
         <div class="col-lg-12">
             <div class="tab-content">
-                {% include codesnippet.html id="example1" name="filtered_oscillator" imgname = "flowpipes_filtered_oscillator_1-2.png" title="Two-dimensional switched oscillator and a parametric number of filters (here 256)" %}
-                {% include codesnippet.html id="example2" name="cruise_control" imgname = "cruise_control.png" title="Hybrid model of a cruise control with service and emergency brakes of the engine" %}
-                {% include codesnippet.html id="example3" name="spacecraft" imgname = "SRA01_SR02.png" title="Transition into aborting mode of the linear hybrid spacecraft rendez-vous model" %}
-                {% include codesnippet.html id="example4" name="quadrotor" imgname = "quadrotor.png" title="Nonlinear dynamics of a quadrotor: verifying stabilization with a PD controller" %}
-                {% include codesnippet.html id="example5" name="laub_loomis" imgname = "laub_loomis.png" title="Nononlinear Laub-Loomis model studying a class of enzymatic activities" %}
-                {% include codesnippet.html id="example6" name="iss" imgname = "ISSF01.png" title="Structural model of component 1R (Russian service module) with 270 state variables" %}
-                {% include codesnippet.html id="example7" name="building" imgname = "BLDF01_time_horizon_20.png" title="Verification that the top-floor displacement of a building is below a given bound" %}
-                {% include codesnippet.html id="example8" name="platoon" imgname = "PLAD01_BND42.png" title="Platoon of three vehicles following each other with loss of communication" %}
+                {% include codesnippet.html id="example1" name="filtered_oscillator" carousel="true" imgname = "filtered_oscillator" title="Two-dimensional switched oscillator and a parametric number of filters (here 256)" %}
+                {% include codesnippet.html id="example2" name="cruise_control" carousel="true" imgname = "cruise_control" title="Hybrid model of a cruise control with service and emergency brakes of the engine" %}
+                {% include codesnippet.html id="example3" name="spacecraft" carousel="true" imgname = "spacecraft" title="Transition into aborting mode of the linear hybrid spacecraft rendez-vous model" %}
+                {% include codesnippet.html id="example4" name="quadrotor" carousel="false" imgname = "quadrotor.png" title="Nonlinear dynamics of a quadrotor: verifying stabilization with a PD controller" %}
+                {% include codesnippet.html id="example5" name="laub_loomis" carousel="false" imgname = "laub_loomis.png" title="Nononlinear Laub-Loomis model studying a class of enzymatic activities" %}
+                {% include codesnippet.html id="example6" name="iss" carousel="false" imgname = "ISSF01.png" title="Structural model of component 1R (Russian service module) with 270 state variables" %}
+                {% include codesnippet.html id="example7" name="building" carousel="false" imgname = "BLDF01_time_horizon_20.png" title="Verification that the top-floor displacement of a building is below a given bound" %}
+                {% include codesnippet.html id="example8" name="platoon" carousel="false" imgname = "PLAD01_BND42.png" title="Platoon of three vehicles following each other with loss of communication" %}
           </div>
         </div>
     </div>
 
-<!--
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="tab-content">
-                {% include codesnippet.html id="example1" name="billiard_disperse" vidname = "stadium.mp4" vidtype = "video/mp4" title="Chaos arising for particles in a focusing billiard"%}
-                {% include codesnippet.html id="example2" name="geometric_optics" vidname = "geometric.mp4" vidtype = "video/mp4" title="Geometric optics and refraction law through ray-splitting" %}
-                {% include codesnippet.html id="example3" name="magnetic_periodic" imgname="magnetic_periodic.png" title="Magnetic and rectangular/hexagonal periodic billiards" %}
-                {% include codesnippet.html id="example4" name="boundary_map" imgname="boundary_map.png" title="Parallelized boundary map of the mushroom billiard" %}
-                {% include codesnippet.html id="example5" name="lyapunovs" imgname="lyapunovs.png" title="Lyapunov spectrum of the Rössler system" %}
-                {% include codesnippet.html id="example6" name="embedding" imgname="embedding.png" title="Finding optimal delay time and dimension for the Rössler system" %}
-                {% include codesnippet.html id="example7" name="recurrence" imgname="recurrence.png" title="Recurrence matrices of the Rössler system" %}
-                {% include codesnippet.html id="example8" name="poincare" imgname="poincare.png" title="Poincaré surface of section of the Hénon–Heiles system" %}
-                {% include codesnippet.html id="example9" name="orbitdiagram" vidname="orbitdiagram.mp4" vidtype = "video/mp4" title="Interactive orbit diagram of the logistic map"%}
-            </div>
-        </div>
-    </div>
--->
+
     <!-- Benchmarks & Repeatability evaluations -->
     <h2 class="page-header"><i class="fa fa-line-chart" aria-hidden="true"></i> Benchmarks & Repeatability Evaluations </h2>
 
