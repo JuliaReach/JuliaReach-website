@@ -38,12 +38,15 @@ and LazySets, a standalone library that implements state-of-the-art algorithms f
 The library offers both concrete and lazy set representations, where the latter stands for the ability to delay set computations until they are needed.
 The choice of the programming language Julia and the accompanying documentation of our toolbox allow researchers to easily translate set-based
 algorithms from mathematics to software in a platform-independent way, while achieving runtime performance that is comparable to statically compiled
-languages. Combining lazy operations in high dimensions and explicit computations in low dimensions, JuliaReach can be applied to solve complex,
-large-scale problems.
+languages. Combining lazy operations in high dimensions and explicit computations in low dimensions, JuliaReach can be applied to solve complex problems.
 </p>
+
+See also the <a href="https://juliareach.github.io/Reachability.jl/latest/publications.html">publications page,</a>
+and works using JuliaReach related projects in the
+<a href="https://juliareach.github.io/Reachability.jl/latest/citations.html">citations page.</a>
+
         </div>
     </div>
-    
     <!-- Packages and their logos -->
     <h2 class="page-header"><i class="fa fa-cubes"></i> Projects</h2>
 
@@ -76,9 +79,12 @@ large-scale problems.
              <li><a href="https://github.com/JuliaReach/Reachability.jl/">Reachability.jl</a> Reachability and Safety of Nondeterministic Dynamical Systems.</li>
              <li><a href="https://github.com/JuliaReach/SX.jl">SX.jl</a> SpaceEx modeling language parser.</li>
              <li><a href="https://github.com/JuliaReach/MathematicalSystems.jl/">MathematicalSystems.jl</a> Systems definitions in Julia.</li>
-             <li><a href="https://github.com/JuliaReach/BernsteinExpansions.jl">BernsteinExpansions.jl</a> A Julia package to compute Bernstein coefficients of multivariate polynomials.</li>
+             <!-- <li><a href="https://github.com/JuliaReach/BernsteinExpansions.jl">BernsteinExpansions.jl</a> A Julia package to compute Bernstein coefficients of multivariate polynomials.</li> -->
              </ul>
-             
+
+
+
+
 <!--
     <div class="row text-center" id="packages">
 
@@ -137,14 +143,17 @@ large-scale problems.
             <h2 class="page-header"><i class="fa fa-file-code-o"></i> Case Studies</h2>
 
             <ul class="nav nav-pills nav-justified" role="tablist">
-                <li role="presentation" class="active"><a href="#example1" aria-controls="example1" role="tab" data-toggle="tab">Filtered oscillator</a></li>
+                <li role="presentation"><a href="#example1" aria-controls="example1" role="tab" data-toggle="tab">Quadrotor <br> stability control </a></li>
+                <li role="presentation"><a href="#example2" aria-controls="example2" role="tab" data-toggle="tab">Spacecraft <br> rendez-vous</a></li>
+                <li role="presentation"><a href="#example3" aria-controls="example3" role="tab" data-toggle="tab">3-vehicle platoon </a></li>
+                <li role="presentation"><a href="#example4" aria-controls="example4" role="tab" data-toggle="tab">Filtered oscillator </a></li>
+                <li role="presentation"><a href="#example5" aria-controls="example5" role="tab" data-toggle="tab">International <br> Space-Station</a></li>
+                <li role="presentation"><a href="#example6" aria-controls="example6" role="tab" data-toggle="tab">Building</a></li>
+              <!--
                 <li role="presentation"><a href="#example2" aria-controls="example2" role="tab" data-toggle="tab">Cruise control</a></li>
-                <li role="presentation"><a href="#example3" aria-controls="example3" role="tab" data-toggle="tab">Spacecraft <br> rendez-vous</a></li>
-                <li role="presentation"><a href="#example4" aria-controls="example4" role="tab" data-toggle="tab">Quadrotor <br> stability control </a></li>
                 <li role="presentation"><a href="#example5" aria-controls="example5" role="tab" data-toggle="tab">Laub-Loomis <br> molecule </a></li>
-                <li role="presentation"><a href="#example6" aria-controls="example6" role="tab" data-toggle="tab">International <br> Space-Station</a></li>
-                <li role="presentation"><a href="#example7" aria-controls="example7" role="tab" data-toggle="tab">Building</a></li>
-                <li role="presentation"><a href="#example8" aria-controls="example8" role="tab" data-toggle="tab"> 3-vehicle platoon </a></li>
+                <li role="presentation" class="active"><a href="#example4" aria-controls="example4" role="tab" data-toggle="tab">Filtered oscillator</a></li>
+             -->
                <!-- <li role="presentation"><a href="#example9" aria-controls="example9" role="tab" data-toggle="tab">Thermostat </a></li> -->
             </ul>
         </div>
@@ -153,47 +162,75 @@ large-scale problems.
     <div class="row">
         <div class="col-lg-12">
             <div class="tab-content">
-                {% include codesnippet.html id="example1" name="filtered_oscillator" carousel="true" imgname = "filtered_oscillator" title="Two-dimensional switched oscillator and a parametric number of filters (here 256)" %}
-                {% include codesnippet.html id="example2" name="cruise_control" carousel="true" imgname = "cruise_control" title="Hybrid model of a cruise control with service and emergency brakes of the engine" %}
-                {% include codesnippet.html id="example3" name="spacecraft" carousel="true" imgname = "spacecraft" title="Transition into aborting mode of the linear hybrid spacecraft rendez-vous model" %}
-                {% include codesnippet.html id="example4" name="quadrotor" carousel="false" imgname = "quadrotor.png" title="Nonlinear dynamics of a quadrotor: verifying stabilization with a PD controller" %}
-                {% include codesnippet.html id="example5" name="laub_loomis" carousel="false" imgname = "laub_loomis.png" title="Nononlinear Laub-Loomis model studying a class of enzymatic activities" %}
-                {% include codesnippet.html id="example6" name="iss" carousel="true" imgname = "iss" title="Structural model of component 1R (Russian service module) with 270 state variables" %}
-                {% include codesnippet.html id="example7" name="building" carousel="true" imgname = "building" title="Verification that the top-floor displacement of a building is below a given bound" %}
-                {% include codesnippet.html id="example8" name="platoon" carousel="true" imgname = "platoon" title="Platoon of three vehicles following each other with loss of communication" %}
+                {% include codesnippet.html id="example1" name="quadrotor" carousel="true" imgname = "quadrotor"
+                   title="Nonlinear dynamics of a quadrotor: verifying stabilization with a PD controller"
+                   description="<p align=:justify> We study the dynamics of a quadrotor as derived in [R. Beard. Quadrotor dynamics and control]. The variables required to describe the model are the inertial (north) position,
+                   the inertial (east) position, the altitude, the longitudinal velocity, the lateral velocity, the vertical velocity, the roll angle, the pitch angle, the yaw angle, the roll rate,
+                   the pitch rate, and the yaw rate. To check interesting control specifications, we stabilize the quadrotor using simple PD controllers for height, roll, and pitch.
+                   </p>
+                   <p align=:justify>
+                   The specification consists of changing the height from 0 [m] to 1 [m] within 5 [s].
+                   A goal region [0.98, 1.02] of the height has to be reached within 5 [s] and the height has to stay below 1.4 for all
+                   times. After 1 [s] the height should stay above 0.9 [m].
+                   The initial position of the quadrotor is uncertain in all directions within [0.4, 0.4] [m]. The initial velocity is
+                   uncertain within [0.4, 0.4] [m/s] for all directions. All other values are initialized as 0.
+                   </p>"
+                %}
+                {% include codesnippet.html id="example2" name="spacecraft" carousel="true" imgname = "spacecraft"
+                   title="Transition into aborting mode of the linear hybrid spacecraft rendez-vous model" %}
+                {% include codesnippet.html id="example3" name="platoon" carousel="true" imgname = "platoon"
+                   title="Platoon of three vehicles following each other with loss of communication" %}
+                {% include codesnippet.html id="example4" name="filtered_oscillator" carousel="true" imgname = "filtered_oscillator"
+                   title="Two-dimensional switched oscillator and a parametric number of filters (here 256)" %}
+                {% include codesnippet.html id="example5" name="iss" carousel="true" imgname = "iss"
+                   title="Structural model of component 1R (Russian service module) with 270 state variables" %}
+                {% include codesnippet.html id="example6" name="building" carousel="true" imgname = "building"
+                   title="Verification that the top-floor displacement of a building is below a given bound" %}
           </div>
         </div>
     </div>
+
+               <!-- include codesnippet.html id="example7" name="cruise_control" carousel="true" imgname = "cruise_control" title="Hybrid model of a cruise control with service and emergency brakes of the engine" -->
+               <!--  include codesnippet.html id="example8" name="laub_loomis" carousel="false" imgname = "laub_loomis.png" title="Nononlinear Laub-Loomis model studying a class of enzymatic activities" -->
 
 
     <!-- Benchmarks & Repeatability evaluations -->
     <h2 class="page-header"><i class="fa fa-line-chart" aria-hidden="true"></i> Benchmarks & Repeatability Evaluations </h2>
 
              <ul>
-             <li><a href="https://github.com/JuliaReach/ARCH2018_RE">ARCH18.</a> 5th International Workshop on Applied Verification of Continuous and Hybrid Systems.</li>
-             <li><a href="https://github.com/JuliaReach/HSCC2019_RE">HSCC19.</a> 22nd ACM International Conference on Hybrid Systems: Computation and Control.</li>
+             <li><a href="https://github.com/JuliaReach/ReachabilityBenchmarks">ReachabilityBenchmarks.</a> Repository with benchmark evaluations of reachability problems.</li>
              <li><a href="https://github.com/JuliaReach/ARCH2019_RE">ARCH19.</a> 6th International Workshop on Applied Verification of Continuous and Hybrid Systems.</li>
+             <li><a href="https://github.com/JuliaReach/HSCC2019_RE">HSCC19.</a> 22nd ACM International Conference on Hybrid Systems: Computation and Control.</li>
+             <li><a href="https://github.com/JuliaReach/ARCH2018_RE">ARCH18.</a> 5th International Workshop on Applied Verification of Continuous and Hybrid Systems.</li>
              </ul>
 
     <!-- People -->
     <div class="row">
         <div class="col-lg-12">
-            
-            
             <h2 class="page-header"><i class="fa fa-users" aria-hidden="true"></i> People</h2>
             <!-- 
                 <h2 class="page-header"><i class="fa fa-external-link"></i> People</h2>
-                -->
+             -->
 
-                  <h3> Developers </h3>
-
+                 <h3> Lead developers </h3>
             <ul>
             <li><a href="https://mforets.github.io">Marcelo Forets.</a> Universidad de la República, Uruguay.</li>
-            <li><a href="https://www.linkedin.com/in/kostemkin/">Kostiantyn Potomkin.</a> Australian National University, Australia.</li>
             <li><a href="https://schillic.github.io">Christian Schilling.</a> Institute for Science and Technology, Austria.</li>
             </ul>
 
-               <h3> Scientific collaborators </h3> 
+                 <h3> Contributors to JuliaReach projects </h3>
+
+            <ul>
+            <li><a href="https://www.linkedin.com/in/aadesh-deshmuhk-405619154/">Aadesh Deshmuhk.</a> Indian Institute of Information Technology, India.</li>
+            <li><a href="https://www.linkedin.com/in/sebasti%C3%A1n-guadalupe-vitabar-b6b678181/">Sebastián Guadalupe.</a> Universidad de la República, Uruguay.</li>
+            <li><a href="https://dblp.org/pers/hd/k/Kekatos:Nikolaos">Nikolaos Kekatos.</a> Université Grenoble Alpes, France.</li>
+            <li><a href="https://perso.uclouvain.be/benoit.legat/home">Benoit Legat.</a> UCLouvain, Belgium.</li>
+            <li><a href="https://www.linkedin.com/in/kostemkin/">Kostiantyn Potomkin.</a> Australian National University, Australia.</li>
+            <li><a href="https://dblp.org/pers/hd/r/Rocca:Alexandre">Alexandre Rocca. </a>INRIA Grenoble, France.</li>
+            <li><a href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-viry-724177168/">Frédéric Viry.</a> CERFACS, France.</li>
+            </ul>
+
+                 <h3> Scientific collaborators network </h3> 
 
                <ul>
                <li><a href="https://www.fis.unam.mx/directorio/16/luis-strong-benet-strong-fernandez">Luis Benet.</a> Instituto de Ciencias Físicas, Universidad Nacional Autónoma de México, México.</li>
@@ -201,11 +238,8 @@ large-scale problems.
                <li><a href="https://sites.google.com/site/frehseg/">Goran Frehse.</a> ENSTA ParisTech, France.</li>
                <li><a href="https://swt.informatik.uni-freiburg.de/staff/podelski">Andreas Podelski.</a> University of Freiburg, Germany.</li>
                <li><a href="http://sistemas.fciencias.unam.mx/~dsanders/">David P. Sanders.</a> Departamento de Física, Facultad de Ciencias, Universidad Nacional Autónoma de México, México.</li>
-               <li><a href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-viry-724177168/">Frédéric Viry.</a> CERFACS, France.</li>
                </ul>
 
         </div>
     </div>
-
-
 </div>
