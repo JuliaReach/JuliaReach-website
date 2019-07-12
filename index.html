@@ -32,17 +32,18 @@ layout: default
             </p>
 -->
 <p align="justify">
-JuliaReach is a toolbox for set-based reachability analysis of dynamical systems.
-JuliaReach consists of two main packages: Reachability, containing implementations of reachability algorithms for continuous and hybrid systems,
-and LazySets, a standalone library that implements state-of-the-art algorithms for calculus with convex sets.
-The library offers both concrete and lazy set representations, where the latter stands for the ability to delay set computations until they are needed.
-The choice of the programming language Julia and the accompanying documentation of our toolbox allow researchers to easily translate set-based
-algorithms from mathematics to software in a platform-independent way, while achieving runtime performance that is comparable to statically compiled
-languages. Combining lazy operations in high dimensions and explicit computations in low dimensions, JuliaReach can be applied to solve complex problems.
+JuliaReach is a toolbox for set-based reachability analysis and safety verification
+of dynamical systems.
+
+The choice of the programming language Julia and the accompanying documentation
+of the packages allow researchers to easily translate set-based algorithms from
+mathematics to software in a platform-independent way, while achieving runtime
+performance that is comparable to statically compiled languages.
+
 </p>
 
-See also the <a href="https://juliareach.github.io/Reachability.jl/latest/publications.html">publications page,</a>
-and works using JuliaReach related projects in the
+For more information see the <a href="https://juliareach.github.io/Reachability.jl/latest/publications.html">publications page.</a>
+Works using JuliaReach related projects can be found in the
 <a href="https://juliareach.github.io/Reachability.jl/latest/citations.html">citations page.</a>
 
         </div>
@@ -73,18 +74,39 @@ and works using JuliaReach related projects in the
         </div>
     </div>
         -->
+<p align="justify">
+The core JuliaReach packages are <a href="https://github.com/JuliaReach/Reachability.jl/">Reachability.jl</a>,
+with state-of-the-art implementationss of reachability algorithms for continuous
+and hybrid systems, either linear or nonlinear. The initial value problems are
+stated using the <a href="https://github.com/JuliaReach/MathematicalSystems.jl/">MathematicalSystems.jl</a> library,
+a project also maintained by the JuliaReach org.
+</p>
 
-             <ul>
-             <li><a href="https://github.com/JuliaReach/LazySets.jl/">LazySets.jl</a> A Julia package for calculus with convex sets.</li>
-             <li><a href="https://github.com/JuliaReach/Reachability.jl/">Reachability.jl</a> Reachability and Safety of Nondeterministic Dynamical Systems.</li>
-             <li><a href="https://github.com/JuliaReach/MathematicalSystems.jl/">MathematicalSystems.jl</a> Systems definitions in Julia.</li>
+<p align="justify">
+<a href="https://github.com/JuliaReach/LazySets.jl/">LazySets.jl</a> is the key
+standalone library for calculus with convex sets, and it can be used
+to represent and compute with sets and operations between sets that are either
+concretey or lazily represented, or in mixed representations, where lazy stands
+for the ability to delay set computations until they are needed.
+</p>
 
-             <br>
-             <li><a href="https://github.com/JuliaReach/SX.jl">SX.jl</a> SpaceEx modeling language parser.</li>
-             <li><a href="https://github.com/JuliaReach/BernsteinExpansions.jl">BernsteinExpansions.jl</a> A Julia package to compute Bernstein coefficients of multivariate polynomials.</li>
-             <li><a href="https://github.com/JuliaReach/IntervalMatrices.jl">IntervalMatrices.jl</a> Matrices with interval coefficients in Julia.</li>
-             <li><a href="https://github.com/JuliaReach/MathematicalSets.jl">MathematicalSets.jl</a> Set definitions in Julia.</li>
-             </ul>
+     <ul>
+     <li><a href="https://github.com/JuliaReach/LazySets.jl/">LazySets.jl</a> A Julia package for calculus with convex sets.</li>
+     <li><a href="https://github.com/JuliaReach/Reachability.jl/">Reachability.jl</a> Reachability and Safety of Nondeterministic Dynamical Systems.</li>
+     <li><a href="https://github.com/JuliaReach/MathematicalSystems.jl/">MathematicalSystems.jl</a> Systems definitions in Julia.</li>
+     <br>
+     </ul>
+
+<p align="justify">
+The following component packages are developed and maintained by the JuliaReach org. 
+</p>
+     <ul>
+     <li><a href="https://github.com/JuliaReach/SX.jl">SX.jl</a> SpaceEx modeling language parser.</li>
+     <li><a href="https://github.com/JuliaReach/BernsteinExpansions.jl">BernsteinExpansions.jl</a> A Julia package to compute Bernstein coefficients of multivariate polynomials.</li>
+     <li><a href="https://github.com/JuliaReach/IntervalMatrices.jl">IntervalMatrices.jl</a> Matrices with interval coefficients in Julia.</li>
+     <li><a href="https://github.com/JuliaReach/MathematicalSets.jl">MathematicalSets.jl</a> Set definitions in Julia.</li>
+     <li><a href="https://github.com/JuliaReach/RangeEnclosures.jl">RangeEnclosures.jl</a> A Julia package to compute range enclosures of real-valued functions.</li>
+     </ul>
 
 <p align=:justify>
 If you like some of these packages, consider contributing! Create an issue in the
@@ -184,6 +206,7 @@ technical discussions take place.
     <div class="row">
         <div class="col-lg-12">
             <div class="tab-content">
+
                 {% include codesnippet.html id="example1" name="quadrotor" carousel="true" imgname = "quadrotor"
                    title="Nonlinear dynamics of a quadrotor: verifying stabilization with a PD controller"
                    description="<p align=:justify> We study the dynamics of a quadrotor as derived in [R. Beard. Quadrotor dynamics and control]. The variables required to describe the model are the inertial (north) position,
@@ -198,14 +221,19 @@ technical discussions take place.
                    uncertain within [0.4, 0.4] [m/s] for all directions. All other values are initialized as 0.
                    </p>"
                 %}
+
                 {% include codesnippet.html id="example2" name="spacecraft" carousel="true" imgname = "spacecraft"
                    title="Transition into aborting mode of the linear hybrid spacecraft rendez-vous model" %}
+
                 {% include codesnippet.html id="example3" name="platoon" carousel="true" imgname = "platoon"
                    title="Platoon of three vehicles following each other with loss of communication" %}
+
                 {% include codesnippet.html id="example4" name="filtered_oscillator" carousel="true" imgname = "filtered_oscillator"
                    title="Two-dimensional switched oscillator and a parametric number of filters (here 256)" %}
+
                 {% include codesnippet.html id="example5" name="iss" carousel="true" imgname = "iss"
                    title="Structural model of component 1R (Russian service module) with 270 state variables" %}
+
                 {% include codesnippet.html id="example6" name="building" carousel="true" imgname = "building"
                    title="Verification that the top-floor displacement of a building is below a given bound" %}
           </div>
