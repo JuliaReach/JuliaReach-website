@@ -3,6 +3,8 @@
         <h3>{{ include.title }}</h3>
     </div>
 
+        <h5>{{ include.description }}</h5>
+
     <div class="row">
         <div class="col-md-6">
 <pre><code class="language-julia">  {%- include_relative _codesnippets/build/{{ include.name }}.jl -%}</code></pre>
@@ -45,12 +47,12 @@
                               {%- if image.path contains path -%}
                               {%- if j == 0 -%}
                                   <div class="item active">
-                                  <img src="{{ site.baseurl }}{{ image.path }}" alt="" width="500px" />
+                                  <img src="{{ site.baseurl }}{{ image.path }}" alt="" width="600px" />
                                    </div>
                               {%- assign j = j | plus:1 -%}
                               {%- else -%}
                               <div class="item">
-                                <img src="{{ site.baseurl }}{{ image.path }}" alt="" width="500px" />
+                                <img src="{{ site.baseurl }}{{ image.path }}" alt="" width="600px" />
                               </div>
                               {%- assign j = j | plus:1 -%}
                                   {%- endif -%}
