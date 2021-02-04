@@ -1,0 +1,16 @@
+Presentation of the work "Efficient reachability analysis of parametric linear hybrid systems with time-triggered transitions" by Marcelo Forets, Daniel Freire and Christian Schilling (2020).
+
+This talk was presented at the 18th ACM-IEEE International Conference on Formal Methods and Models for System Design https://iitjammu.ac.in/conferences/memocode2020/
+
+Abstract: Efficiently handling time-triggered and possibly
+nondeterministic switches for hybrid systems reachability is a
+challenging task. In this paper we focus on periodically controlled
+systems with fast-switching controller dynamics, which often
+require simulation time scales of the order of nanoseconds.
+Accurate set-based computations for such systems with relatively
+large time horizons are expensive due to the accumulation
+of errors in the discrete transitions. We present an approach
+based on conservative set-based enclosure of the dynamics that
+can handle systems with uncertain parameters and inputs. We
+demonstrate our algorithm on the plant model of an experimental
+electro-mechanical braking system with periodic controller.
