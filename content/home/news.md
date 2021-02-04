@@ -1,7 +1,10 @@
 ---
 # An instance of the Portfolio widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
-widget: portfolio
+widget: pages
+
+# Activate this widget? true/false
+active: true
 
 # This file represents a page section.
 headless: true
@@ -9,7 +12,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 65
 
-title: Projects
+title: What's new
 subtitle: ''
 
 content:
