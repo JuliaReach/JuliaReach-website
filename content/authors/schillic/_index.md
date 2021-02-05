@@ -1,9 +1,9 @@
 ---
 # Display name
-title: Marcelo Forets
+title: Christian Schilling
 
 # Is this the primary user of the site?
-superuser: true
+superuser: false
 
 # Role/position/tagline
 role: Professor of Artificial Intelligence
@@ -66,14 +66,18 @@ social:
 #   link: media/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "mforets@gmail.com"
+email: "firstname.lastname@uni-konstanz.de"
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Christian Schilling is a computer scientist interested in analysis,
+formal verification, and synthesis of dynamical, cyber-physical, and
+software systems, and explainable artificial intelligence.
+Currently working at the University of Konstanz, Germany, received
+his Ph.D. degree under supervision of Andreas Podelski from the
+University of Freiburg, Germany, in 2018. Former postdoctoral fellow
+with Thomas A. Henzinger at IST Austria.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.

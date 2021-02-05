@@ -1,7 +1,7 @@
 ---
 # An instance of the Pages widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
-widget: portfolio
+widget: pages
 
 # Activate this widget? true/false
 active: true
@@ -12,8 +12,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 60
 
-title: Software
-subtitle: Check our Julia packages
+title: Discover
+subtitle: 'A research-level, modular and high-performance software ecosystem'
 
 content:
   # Page type to display. E.g. post, talk, publication...
@@ -25,7 +25,7 @@ content:
     author: ""
     category: ""
     tag: ""
-    exclude_featured: false
+    exclude_featured: true
     exclude_future: false
     exclude_past: false
     publication_type: ""
@@ -40,5 +40,5 @@ design:
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view: 3
+  view: 2
 ---

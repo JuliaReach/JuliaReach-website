@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Marcelo Forets
+title: Sebastian Guadalupe
 
 # Is this the primary user of the site?
 superuser: true
@@ -8,7 +8,7 @@ superuser: true
 # Role/position/tagline
 role: Professor of Artificial Intelligence
 
-user_groups: ["Permanent Researchers"]
+user_groups: ["Collaborators & Teammates"]
 
 # Organizations/Affiliations to show in About widget
 organizations:

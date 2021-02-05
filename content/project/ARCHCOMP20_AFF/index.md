@@ -1,5 +1,5 @@
 ---
-title: Example Project
+title: ARCH-COMP20 Category Report. Continuous and Hybrid Systems with Linear Continuous Dynamics.
 summary: An example of using the in-built project page.
 tags:
 - Deep Learning
@@ -29,6 +29,9 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 slides: example
 ---
+
+**Efficient reachability analysis of parametric linear hybrid systems with time-triggered transitions.** Marcelo Forets, Daniel Freire, Christian Schilling, 2020. [arXiv: 2006.12325](https://arxiv.org/abs/2006.12325). In [18th ACM-IEEE International Conference on Formal Methods and Models for System Design
+](https://iitjammu.ac.in/conferences/memocode2020/index.html).
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
 
