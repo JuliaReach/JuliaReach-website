@@ -13,7 +13,7 @@ headless: true
 weight: 80
 
 title: Publications
-subtitle: 'Reproducible software, applications in peeer-reviewed journals and conferences' # FIXME improve this sentence
+subtitle: 'Reproducible software, applications in peer-reviewed journals and conferences' # FIXME improve this sentence
 
 content:
   # Page type to display. E.g. post, talk, publication...

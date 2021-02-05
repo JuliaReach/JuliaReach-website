@@ -12,6 +12,7 @@ lastmod: 2021-02-05T14:29:22-03:00
 featured: false
 draft: false
 
+
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
@@ -28,6 +29,19 @@ image:
 projects: []
 ---
 ## Context
+
+```mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+```
+
+$$\gamma_{n} = \frac{
+\left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T
+\left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}
+{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
 
 Let an initial-value problem be specified as follows:
 
@@ -66,7 +80,7 @@ function solve(f, h, t₀, T, y₀)
     N = round(Int, (T - t₀) / h)
     t = Vector{Float64}(undef, N)
     y = Vector{typeof(y₀)}(undef, N)
-    y[1] = y₀; t[1] = t₀; 
+    y[1] = y₀; t[1] = t₀;
 
     for n in 1:N-1
         step!(f, y, n, t, h)
@@ -415,5 +429,3 @@ plot!(out[1:100], marker=:x, c=:red)
 
 
 ![svg](output_42_0.svg)
-
-
