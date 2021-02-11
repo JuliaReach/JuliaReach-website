@@ -17,9 +17,9 @@ subtitle: 'A research-level, modular and high-performance software ecosystem'
 
 content:
   # Page type to display. E.g. post, talk, publication...
-  page_type: project
+  page_type: software
   # Choose how many pages you would like to display (0 = all pages)
-  count: 5
+  count: 0
   # Filter on criteria
   filters:
     author: ""
@@ -35,10 +35,14 @@ content:
   order: desc
 
 design:
-  # Choose a view for the listings:
+  # Choose how many columns the section has. Valid values: 1 or 2.
+  columns: '2'
+  # Toggle between the various page layout types.
   #   1 = List
-  #   2 = Compact
+  #   2 = Compact  
   #   3 = Card
-  #   4 = Citation (publication only)
-  view: 2
+  #   5 = Showcase
+  view: 5
+  # For Showcase view, flip alternate rows?
+  flip_alt_rows: false
 ---
