@@ -6,36 +6,29 @@ title: Marcelo Forets
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: Universidad de la República, Uruguay
 
-user_groups: ["Permanent Researchers"]
+user_groups: ["Team Members"]
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: Univ. de la República
-  url: https://www.stanford.edu/
+- name: Universidad de la República
+  url: https://mforets.github.io/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research includes developing numerical methods and software that impact decisions regarding reliability, correctness and safety of systems. I specialize on formal verification of Cyber-Physical Systems (CPS), hybrid dynamical systems, and robustness analysis of neural networks.
 
 # Interests to show in About widget
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Reachability Analysis
+- Hybrid Systems
 
 # Education to show in About widget
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: PhD in Applied Mathematics and Informatics
+    institution: Grenoble Alpes University, France
+    year: 2015
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -44,19 +37,19 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '/#contact'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
-  icon_pack: fas
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: 'mailto:mforets@gmail.com'
+#- icon: twitter
+#  icon_pack: fab
+#  link: https://twitter.com/GeorgeCushen
+- icon: google-scholar  # Alternatively, use `google-scholar` icon from `ai` icon pack
+  icon_pack: ai
+  link: https://scholar.google.com/citations?user=XSJzDEsAAAAJ&hl=en
 - icon: github
   icon_pack: fab
   link: https://github.com/mforets
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/
+  link: https://www.linkedin.com/in/marcelo-forets-irurtia-7b8238149/
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`,
@@ -72,8 +65,8 @@ email: "mforets@gmail.com"
 highlight_name: false
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Born in Uruguay (Montevideo, 1988), I graduated in Physics from Univ. de la República (Facultad de Ciencias), and in Electrical Engineering (Facultad de Ingeniería). I moved to France for a PhD in Mathematics and Informatics (Univ. Joseph Fourier, 2013-2015), writing a thesis on the quantum random walk, a mathematical model of particular interest in Quantum Computing.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I'm a former post-doc researcher at VERIMAG laboratory of Université Grenoble Alpes (2016-2017), a leading French research center in embedded systems that are used in diverse disciplines such as avionics/aeronautics, space, transport, automotive, telecommunications, smart cards and consumer electronics. As an Applied Mathematician, my research has to do with developing innovative numerical tools that impact decisions regarding reliability, correctness and safety of systems. I specialize on formal verification of Cyber-Physical Systems (CPS), hybrid dynamical systems, and robustness analysis of neural networks.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+If you are interested to discuss, get in touch! You can email me to `mforets at gmail.com`.

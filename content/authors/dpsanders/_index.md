@@ -1,12 +1,12 @@
 ---
 # Display name
-title: Christian Schilling
+title: David P. Sanders
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position/tagline
-role: University of Konstanz, Germany
+role: Universidad Nacional Autónoma de México
 
 user_groups: ["Team Members"]
 
@@ -20,9 +20,9 @@ bio:
 
 # Interests to show in About widget
 interests:
-- Formal Verification
-- Artificial Intelligence
-- CPS
+- Set-valued methods
+- Interval arithmetic
+- Constraint propagation
 
 # Education to show in About widget
 education:
@@ -36,18 +36,21 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "/#contact" for contact widget.
 social:
-- icon: envelope
-  icon_pack: fas
-  link: 'mailto:your-email@example.com'
-- icon: google-scholar  # Alternatively, use `google-scholar` icon from `ai` icon pack
-  icon_pack: ai
-  link:
+#- icon: envelope
+#  icon_pack: fas
+#  link: 'mailto:'
+- icon: twitter
+  icon_pack: fab
+  link: https://twitter.com/DavidPSanders
+#- icon: google-scholar  # Alternatively, use `google-scholar` icon from `ai` icon pack
+#  icon_pack: ai
+#  link:
 - icon: github
   icon_pack: fab
-  link: https://schillic.github.io/
-- icon: linkedin
-  icon_pack: fab
-  link: https://www.linkedin.com/
+  link: https://github.com/dpsanders
+#- icon: linkedin
+#  icon_pack: fab
+#  link: https://www.linkedin.com/
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`,
@@ -57,16 +60,8 @@ social:
 #   link: media/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "firstname.lastname@uni-konstanz.de"
+email: ""
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
 ---
-
-Christian Schilling is a computer scientist interested in analysis,
-formal verification, and synthesis of dynamical, cyber-physical, and
-software systems, and explainable artificial intelligence.
-Currently working at the University of Konstanz, Germany, received
-his Ph.D. degree under supervision of Andreas Podelski from the
-University of Freiburg, Germany, in 2018. Former postdoctoral fellow
-with Thomas A. Henzinger at IST Austria.
