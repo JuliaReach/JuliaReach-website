@@ -1,17 +1,18 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "RK4_TaylorSeries"
-subtitle: ""
+title: "Taylor expanding ODE solutions"
+subtitle: "An example on how to combine a numerical differential equation solver with a symbolic initial state using truncated Taylor series"
 summary: ""
-authors: []
-tags: []
+authors:
+- admin
+tags:
+  - Reachability
 categories: []
 date: 2021-02-05T14:29:22-03:00
 lastmod: 2021-02-05T14:29:22-03:00
 featured: false
 draft: false
-
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -28,20 +29,10 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+
+<< WORK-IN-PROGRESS>>
+
 ## Context
-
-```mermaid
-graph TD;
-  A-->B;
-  A-->C;
-  B-->D;
-  C-->D;
-```
-
-$$\gamma_{n} = \frac{
-\left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T
-\left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}
-{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
 
 Let an initial-value problem be specified as follows:
 
@@ -313,14 +304,6 @@ evaluate(y[100], -0.1 .. 0.1)
 using ReachabilityAnalysis
 const RA = ReachabilityAnalysis
 ```
-
-    WARNING: using ReachabilityAnalysis.evaluate in module Main conflicts with an existing identifier.
-    WARNING: using ReachabilityAnalysis.solve in module Main conflicts with an existing identifier.
-
-
-
-
-
     ReachabilityAnalysis
 
 

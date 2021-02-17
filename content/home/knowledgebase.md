@@ -12,8 +12,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 90
 
-title: Knowledge base
-subtitle: ""
+title: 'Knowledge Base'
+subtitle: 'In-depth technical articles about reachability and related topics'
 
 content:
   # Page type to display. E.g. post, talk, publication...
