@@ -1,12 +1,19 @@
 ---
-title: Efficient reachability analysis of parametric linear hybrid systems with time-triggered transitions
+title: 'Efficient reachability analysis of parametric linear hybrid systems with time-triggered transitions'
+
 subtitle:
-summary: by Marcelo Forets, Daniel Freire, Christian Schilling, 2020.
+
+summary: 'by Marcelo Forets, Daniel Freire, Christian Schilling (2020)'
+
 tags:
 - Reachability
 - Hybrid systems
 - Periodic controller
+
 date: "2020-06-01T00:00:00Z"
+
+draft: false
+
 author: []
 
 # Optional external URL for project (replaces project detail page).

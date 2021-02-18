@@ -1,19 +1,19 @@
 ---
 # Display name
-title: Sebastian Guadalupe
-weight: 4
+title: Jorge Pérez Zerpa
+weight: 5
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position/tagline
-role: Julia Seasons of Contributions '20 Student
+role: Universidad de la República, Uruguay
 
 user_groups: ["Team Members"]
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name:
+- name: Universidad de la República
   url:
 
 # Short bio (displayed in user profile at end of posts)
@@ -21,8 +21,9 @@ bio:
 
 # Interests to show in About widget
 interests:
-- Mathematical Modeling
-- Hybrid systems
+- Finite Element Method
+- Structural Engineering
+- Material Identification
 
 # Education to show in About widget
 education:
@@ -39,15 +40,12 @@ social:
 #- icon: envelope
 #  icon_pack: fas
 #  link: 'mailto:your-email@example.com'
-#- icon: twitter
-#  icon_pack: fab
-#  link: https://twitter.com/
-#- icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
-#  icon_pack: fas
-#  link: https://scholar.google/...
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com.uy/citations?user=Qb476KIAAAAJ&hl=en
 - icon: github
   icon_pack: fab
-  link: https://github.com/sebastianguadalupe
+  link: https://www.fing.edu.uy/~jorgepz/
 #- icon: linkedin
 #  icon_pack: fab
 #  link: https://www.linkedin.com/
@@ -60,7 +58,7 @@ social:
 #   link: media/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-#email: ""
+email: ""
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false

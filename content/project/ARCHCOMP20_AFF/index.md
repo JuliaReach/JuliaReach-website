@@ -1,24 +1,49 @@
 ---
-title: ARCH-COMP20 Category Report. Continuous and Hybrid Systems with Linear Continuous Dynamics.
-summary: An example of using the in-built project page.
-tags:
-- Deep Learning
-date: "2016-04-27T00:00:00Z"
+title: 'ARCH-COMP20 Category Report: Continuous and Hybrid Systems with Linear Continuous Dynamics'
 
-draft: true
+subtitle:
+
+summary: 'by Matthias Althoff, Stanley Bak, Zongnan Bao, Marcelo Forets, Daniel Freire, Goran Frehse, Niklas Kochdumper, Yangge Li, Sayan Mitra, Rajarshi Ray, Christian Schilling, Stefan Schupp, and Mark Wetzlinger (2020)'
+
+tags:
+- Reachability
+- ARCH-COMP
+
+date: "2020-09-25T00:00:00Z"
+
+draft: false
+
+author: []
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
 
 image:
-  caption: Photo by rawpixel on Unsplash
-  focal_point: Smart
+  caption:
+  focal_point:
 
 links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
+- icon: book
+  icon_pack: fas
+  name: Article
+  url: https://easychair.org/publications/paper/DRpS
+#- icon: ieee
+#  icon_pack: ai
+#  name: Conference # FIXME choose icon / conference link
+#  url: https://cps-vo.org/group/ARCH
+#- icon: youtube
+#  icon_pack: fab
+#  name: Talk
+#  url:
+#- icon: book-open
+#  icon_pack: fas
+#  name: Slides
+#  url:
+#- icon: twitter
+#  icon_pack: fab
+#  name: Share
+#  url: https://twitter.com/JuliaReach
+
 url_code: ""
 url_pdf: ""
 url_slides: ""
@@ -29,18 +54,58 @@ url_video: ""
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: example
+#slides: example
 ---
 
-**Efficient reachability analysis of parametric linear hybrid systems with time-triggered transitions.** Marcelo Forets, Daniel Freire, Christian Schilling, 2020. [arXiv: 2006.12325](https://arxiv.org/abs/2006.12325). In [18th ACM-IEEE International Conference on Formal Methods and Models for System Design
-](https://iitjammu.ac.in/conferences/memocode2020/index.html).
+## Publication
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+**ARCH-COMP20 Category Report: Continuous and Hybrid Systems with Linear Continuous Dynamics.**
+Matthias Althoff, Stanley Bak, Zongnan Bao, Marcelo Forets, Daniel Freire, Goran Frehse, Niklas
+Kochdumper, Yangge Li, Sayan Mitra, Rajarshi Ray, Christian Schilling, Stefan Schupp, and Mark
+Wetzlinger (2020) ARCH20. 7th International Workshop on Applied Verification of Continuous and
+Hybrid Systems. 7th International Workshop on Applied Verification of Continuous and Hybrid Systems
+(ARCH20), vol 74, pages 16--48. [10.29007/7dt2](https://easychair.org/publications/paper/DRpS).
 
-Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.
+## Abstract
 
-Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.
+We present the results of the ARCH 2020
+([Workshop on Applied Verification for Continuous and Hybrid Systems](http://cps-vo.org/group/ARCH) friendly
+competition for formal verification of continuous and hybrid systems with linear continuous dynamics.
+In its fourth edition, eight tools have been applied to solve eight different benchmark problems in the
+category for linear continuous dynamics (in alphabetical order): CORA, C2E2, HyDRA, Hylaa, Hylaa-Continuous,
+JuliaReach, SpaceEx, and XSpeed. This report is a snapshot of the current landscape of tools and the types of
+benchmarks they are particularly suited for. Due to the diversity of problems, we are not ranking tools,
+yet the presented results provide one of the most complete assessments of tools for the safety verification
+of continuous and hybrid systems with linear continuous dynamics up to this date.
 
-Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.
+## Contributions
 
-Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.
+We consider the verification of hybrid systems (i.e., mixed discrete/continuous systems) with linear continuous dynamics
+$$
+\dot{x}(t) = Ax(t) + Bu(t),
+$$
+where $A \in \mathbb{R}^{n \times n}$, $x \in \mathbb{R}^n$, $B \in \mathbb{R}^{n \times m}$, and $u \in \mathbb{R}^m$. For all results reported by each participant, we have run an independent repeatability evaluation. To establish further trustworthiness of the results, the code with which the results have been obtained is publicly available [here](https://gitlab.com/goranf/ARCH-COMP).
+The selection of the benchmarks has been conducted within the forum of the ARCH website
+([here](http://cps-vo.org/group/ARCH)), which is visible for registered users and
+registration is open to anybody. All tools presented in this report use some form of
+reachability analysis. This, however, is not a constraint set by the organizers of the friendly competition. We hope to encourage further tool developers to showcase their results in future editions.
+
+## How to cite
+
+```
+@inproceedings{ARCH20:ARCH_COMP20_Category_Report_Continuous,
+  author    = {Matthias Althoff and Stanley Bak and Zongnan Bao and Marcelo Forets and Goran Frehse and Daniel Freire and Niklas Kochdumper and Yangge Li and Sayan Mitra and Rajarshi Ray and Christian Schilling and Stefan Schupp and Mark Wetzlinger},
+  title     = {ARCH-COMP20 Category Report: Continuous and Hybrid Systems with Linear Continuous Dynamics},
+  booktitle = {ARCH20. 7th International Workshop on Applied Verification of Continuous and Hybrid Systems (ARCH20)},
+  editor    = {Goran Frehse and Matthias Althoff},
+  series    = {EPiC Series in Computing},
+  volume    = {74},
+  pages     = {16--48},
+  year      = {2020},
+  publisher = {EasyChair},
+  bibsource = {EasyChair, https://easychair.org},
+  issn      = {2398-7340},
+  url       = {https://easychair.org/publications/paper/DRpS},
+  doi       = {10.29007/7dt2}
+}
+```
