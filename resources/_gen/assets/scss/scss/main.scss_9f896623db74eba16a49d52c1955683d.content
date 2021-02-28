@@ -9407,4 +9407,12 @@ div.chart {
 .featured-image,
 .article-style {
   text-align: justify;
-  width: 120%; }
+  width: 100%; }
+
+/*
+%@media(max-width:767px) {
+%  .text-left {
+%    text-align: center;
+%  }
+%}
+*/

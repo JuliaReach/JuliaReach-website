@@ -3,7 +3,7 @@
 
 title: "Taylor expanding ODE solutions"
 subtitle: "An example on how to combine a numerical differential equation solver with a symbolic initial state using truncated Taylor series"
-summary: ""
+summary: ' '
 authors:
 - admin
 tags:

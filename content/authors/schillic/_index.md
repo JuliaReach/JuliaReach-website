@@ -23,7 +23,7 @@ bio:
 interests:
 - Formal Verification
 - Artificial Intelligence
-- CPS
+- Cyber-Physical Systems
 
 # Education to show in About widget
 education:
