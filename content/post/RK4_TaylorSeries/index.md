@@ -39,7 +39,7 @@ Let an initial-value problem be specified as follows:
 $$
 y'(t) = f(t, y),\qquad y(t_0) = y_0.\qquad (1)
 $$
-Here $y \in \mathbb{R}^m$ is an unknown function of time $t$.
+Here $y \in \mathbb{R}^m$ is an unknown function of time $t$ .
 
 We will consider a naive Julia implementation of the famous fourth-order explicit [Runge-Kutta integration method](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods). The idea is to use such method to solve (1) for the case when $y_0$ is defined symbolically in the sense that we replace $y_0$ by $y_0 + \xi$ where $\xi$ is a vector of $m$ "symbols". We would like to evaluate how does the classic RK4 method propagate the $\xi$ and see what information can be extracted from such expansion.
 
