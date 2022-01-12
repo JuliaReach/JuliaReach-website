@@ -7,7 +7,7 @@ weight: 7
 superuser: false
 
 # Role/position/tagline
-role: University of Konstanz, Germany
+role: Aalborg University, Denmark
 
 user_groups: ["Team Members"]
 
@@ -58,7 +58,7 @@ social:
 #   link: media/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "firstname.lastname@uni-konstanz.de"
+email: "christianms@cs.aau.dk"
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
