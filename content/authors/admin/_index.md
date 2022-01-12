@@ -66,7 +66,7 @@ email: "mforets@gmail.com"
 highlight_name: false
 ---
 
-Born in Uruguay (Montevideo, 1988), I graduated in Physics from Univ. de la República (Facultad de Ciencias), and in Electrical Engineering (Facultad de Ingeniería). I moved to France for a PhD in Mathematics and Informatics (Univ. Joseph Fourier, 2013-2015), writing a thesis on the quantum random walk, a mathematical model of particular interest in Quantum Computing.
+Born in Uruguay (Montevideo,  1988), I graduated in Physics from Univ. de la República (Facultad de Ciencias), and in Electrical Engineering (Facultad de Ingeniería). I moved to France for a PhD in Mathematics and Informatics (Univ. Joseph Fourier, 2013-2015), writing a thesis on the quantum random walk, a mathematical model of particular interest in Quantum Computing.
 
 I'm a former post-doc researcher at VERIMAG laboratory of Université Grenoble Alpes (2016-2017), a leading French research center in embedded systems that are used in diverse disciplines such as avionics/aeronautics, space, transport, automotive, telecommunications, smart cards and consumer electronics. As an Applied Mathematician, my research has to do with developing innovative numerical tools that impact decisions regarding reliability, correctness and safety of systems. I specialize on formal verification of Cyber-Physical Systems (CPS), hybrid dynamical systems, and robustness analysis of neural networks.
 
