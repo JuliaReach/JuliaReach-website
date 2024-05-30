@@ -31,7 +31,7 @@ item:
     #   Activate the button by specifying a URL and button label below.
     #   Deactivate by commenting out parameters, prefixing lines with `#`.
     cta_label: 'Example'
-    cta_url: 'https://juliareach.github.io/ReachabilityAnalysis.jl/dev/models/ISS/#International-Space-Station-1' # TODO add new example in the webpage
+    cta_url: 'https://juliareach.github.io/ReachabilityAnalysis.jl/dev/generated_examples/ISS/' # TODO add new example in the webpage
     cta_icon_pack: fas
     cta_icon: map-signs # chalkboard, chalkboard-teacher
     overlay_color: '#236'
